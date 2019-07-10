@@ -3,62 +3,65 @@
 /* /////////////////////////// */
 
 html {
-    background-color: rgb(109, 166, 184);
+  background-color: @rich-black;
 }
 
 main {
-    background: rgb(12, 7, 23);
-    background: linear-gradient(0deg,
-            rgba(12, 7, 23, 1) 0%,
-            rgba(75, 56, 115, 1) 46%,
-            rgb(109, 166, 184) 100%);
-    /* background-image : url("img/night-sky.jpg");
-  background-repeat     : no-repeat;
-  background-size       : 100% auto; */
+  background: @background-color;
+  background: linear-gradient(
+    0deg,
+    @background-color-accent 0%,
+    @background-color 100%
+  );
 }
 
 p,
 blockquote,
 ul {
-    font-family: "Niramit", sans-serif;
-    font-size  : 1.3rem;
-    line-height: 1.4em;
-    margin     : 10px 0 20px;
+  font-family: @paragraph-font;
+  font-size: 1.3rem;
+  line-height: 1.4em;
+  margin: 10px 0 20px;
 }
 
 p {
-    text-align: center;
+  text-align: center;
 }
 
 blockquote {
-    margin     : 0 25px;
-    padding    : 0 25px;
-    font-size  : 1.1rem;
-    line-height: 1.4em;
-    border-left: 3px solid #ffc33d;
+  margin: 0 25px;
+  padding: 0 25px;
+  font-size: 1.1rem;
+  line-height: 1.4em;
+  border-left: 3px solid @header-accent-3;
+}
+
+ul {
+  list-style-type: circle;
 }
 
 h2 {
-    font-family  : "Shrikhand", sans-serif;
-    text-align   : center;
-    color        : #e9f6f7;
-    text-shadow  : 4px 4px 0px #ffc33d;
-    font-size    : 4.5rem;
-    margin-bottom: 15px;
+  font-family: @display-font;
+  text-align: center;
+  color: @font-color;
+  text-shadow: 2.5px 3px 0px @header-accent-3;
+  font-size: 4.5rem;
+  margin-bottom: 15px;
 }
 
 h3 {
-    font-family   : "Fredoka One", sans-serif;
-    text-align    : center;
-    font-size     : 2.6rem;
-    margin-bottom : 15px;
-    text-transform: uppercase;
+  font-family: @paragraph-font;
+  color: @font-color-accent;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  //   text-transform: uppercase;
 }
 
 a {
-    color: #ffdb3d;
+  color: @link-color;
 }
 
 a:hover {
-    color: #fff;
+  color: @link-color-hover;
 }

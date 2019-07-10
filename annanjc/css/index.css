@@ -134,19 +134,16 @@ table {
 /* PAGE STYLING */
 /* /////////////////////////// */
 html {
-  background-color: #6da6b8;
+  background-color: #030104;
 }
 main {
-  background: #0c0717;
-  background: linear-gradient(0deg, #0c0717 0%, #4b3873 46%, #6da6b8 100%);
-  /* background-image : url("img/night-sky.jpg");
-  background-repeat     : no-repeat;
-  background-size       : 100% auto; */
+  background: #030104;
+  background: linear-gradient(0deg, #360b1c 0%, #030104 100%);
 }
 p,
 blockquote,
 ul {
-  font-family: "Niramit", sans-serif;
+  font-family: 'B612', sans-serif;
   font-size: 1.3rem;
   line-height: 1.4em;
   margin: 10px 0 20px;
@@ -159,28 +156,31 @@ blockquote {
   padding: 0 25px;
   font-size: 1.1rem;
   line-height: 1.4em;
-  border-left: 3px solid #ffc33d;
+  border-left: 3px solid #8b6364;
+}
+ul {
+  list-style-type: circle;
 }
 h2 {
-  font-family: "Shrikhand", sans-serif;
+  font-family: 'Oleo Script Swash Caps', cursive;
   text-align: center;
-  color: #e9f6f7;
-  text-shadow: 4px 4px 0px #ffc33d;
+  color: #F2D8C1;
+  text-shadow: 2.5px 3px 0px #8b6364;
   font-size: 4.5rem;
   margin-bottom: 15px;
 }
 h3 {
-  font-family: "Fredoka One", sans-serif;
+  font-family: 'B612', sans-serif;
+  color: #d5b9b1;
   text-align: center;
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   margin-bottom: 15px;
-  text-transform: uppercase;
 }
 a {
-  color: #ffdb3d;
+  color: #e4a999;
 }
 a:hover {
-  color: #fff;
+  color: #bb7897;
 }
 /* NAVIGATION */
 .navigation {
@@ -189,7 +189,7 @@ a:hover {
   width: 100%;
   height: 80px;
   z-index: 5;
-  background-color: #6da6b8;
+  background-color: #030104;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -197,16 +197,16 @@ a:hover {
 }
 .navigation a {
   text-decoration: none;
-  color: #fff;
+  color: #cbd3c4;
   font-size: 20px;
-  font-family: "Fredoka One", sans-serif;
+  font-family: 'B612', sans-serif;
   text-transform: uppercase;
   padding: 28px;
   background-repeat: no-repeat;
   background-position: center;
 }
 .navigation a:hover {
-  color: #ffdb3d;
+  color: #73254c;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -230,58 +230,62 @@ a:hover {
   background: url(images/beer.png);
   background-size: 52px auto;
 }
+.footer {
+  padding: 20px 0 50px;
+  background: #302b3a;
+  color: #646368;
+  text-align: center;
+}
+.footer p {
+  font-size: 1rem;
+}
+.footer a {
+  color: #9e8a85;
+}
+.footer a:hover {
+  color: #d5b9b1;
+}
 /* SPLASH */
 .hero {
   margin-top: 80px;
-  /* background         : url(images/mountains.jpg); */
+  background: url(../img/peony.jpg);
   height: 90vh;
   background-size: 100% auto;
   background-position: center center;
 }
 .super-splash-header {
-  /* font-family: 'Lily Script One', serif;
-  font-family     : 'Major Mono Display', monospace;
-  */
-  font-family: "Shrikhand", sans-serif;
+  font-family: 'Oleo Script Swash Caps', cursive;
   text-align: center;
-  color: #e9f6f7;
-  text-shadow: 5px 8px 0px #ffdb3d, 10px 16px 0px #ff853d, 15px 24px 0px #ff3d3d;
+  color: #eee1d6;
+  text-shadow: 4px 5px 0px #360b1c;
   font-size: 10rem;
   padding: 10vh 0 20px;
 }
 .super-splash-subline {
-  font-family: "Shrikhand", sans-serif;
-  color: #fff;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  color: #F2D8C1;
   text-align: center;
-  text-shadow: 0px 0px 10px #3f3e72;
-  font-size: 2rem;
+  text-shadow: 3px 2.5px 0px #8b6364;
+  font-size: 4rem;
 }
 .super-splash-dateline {
-  font-family: "Fredoka One", sans-serif;
-  color: #fff;
+  font-family: 'B612', sans-serif;
+  color: #F2D8C1;
   text-align: center;
-  text-shadow: 0px 0px 10px #3f3e72;
-  font-size: 2.2rem;
+  text-shadow: 0px 0px 0px #360b1c;
+  font-size: 2.5rem;
 }
 .super-splash-location {
-  font-family: "Fredoka One", sans-serif;
-  color: #ffdb3d;
-  text-transform: uppercase;
+  font-family: 'B612', sans-serif;
+  color: #eee1d6;
+  text-transform: capitalize;
   text-align: center;
-  text-shadow: 0px 0px 10px #3f3e72;
+  text-shadow: 0px 0px 0px #360b1c;
   font-size: 2rem;
-}
-.full-width-pattern {
-  height: 180px;
-  display: block;
-  width: 100%;
-  background: url(images/pattern.png) repeat transparent;
-  background-size: auto 100%;
 }
 /* MAIN CONTENT */
 .main-section {
   padding: 90px 20px 80px;
-  /* background: #000000; */
 }
 /* @media only screen and (min-width: 1050px) {
     .main-content {
@@ -296,6 +300,9 @@ a:hover {
   margin: 0 auto;
   display: block;
 }
+.who img {
+  max-width: 200px;
+}
 @media only screen and (max-width: 700px) {
   .iframe {
     position: relative;
@@ -309,7 +316,7 @@ a:hover {
     height: 600px;
   }
   p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.4em;
   }
   blockquote {
@@ -319,11 +326,14 @@ a:hover {
   .main-section {
     padding: 50px 20px 60px;
   }
+  .hero {
+    margin: 80px 5% 0;
+  }
   h2 {
-    font-family: "Shrikhand", sans-serif;
+    font-family: 'Oleo Script Swash Caps', cursive;
     text-align: center;
-    color: #e9f6f7;
-    text-shadow: 4px 4px 0px #ffc33d;
+    color: #F2D8C1;
+    text-shadow: 4px 4px 0px #302b3a;
     font-size: 3rem;
     margin-bottom: 15px;
   }
@@ -332,8 +342,11 @@ a:hover {
     margin-bottom: 15px;
   }
   .super-splash-header {
-    font-size: 5rem;
-    text-shadow: 3px 4px 0px #ffdb3d, 6px 8px 0px #ff853d, 9px 12px 0px #ff3d3d;
+    font-size: 7rem;
+  }
+  .super-splash-subline {
+    font-size: 2.6rem;
+    text-shadow: 2px 1.75px 0px #8b6364;
   }
   .super-splash-dateline {
     font-size: 1.8rem;
@@ -343,29 +356,10 @@ a:hover {
   }
   .navigation a {
     padding: 0px;
-    transform: rotate(-25deg);
-  }
-  .navigation a:hover {
-    background-image: none;
+    transform: rotate(-35deg);
   }
 }
 .rsvp {
   flex: 1;
   text-align: center;
 }
-.footer {
-  padding: 20px 0 50px;
-  background: #110b1e;
-  font-size: 10px;
-  text-align: center;
-}
-/*
-font-family: 'Srisakdi', cursive;
-font-family: 'Major Mono Display', monospace;
-font-family: 'Staatliches', cursive;
-font-family: 'Shrikhand', cursive;
-font-family: 'Lily Script One', cursive;
-font-family: 'Niramit', sans-serif;
-
-font-family: 'Fredoka One', cursive;
-*/
