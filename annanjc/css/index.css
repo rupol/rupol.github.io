@@ -130,12 +130,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* /////////////////////////// */
-/* PAGE STYLING */
-/* /////////////////////////// */
-html {
-  background-color: #030104;
-}
 main {
   background: #030104;
   background: linear-gradient(0deg, #360b1c 0%, #030104 100%);
@@ -143,13 +137,30 @@ main {
 p,
 blockquote,
 ul {
-  font-family: 'B612', sans-serif;
+  font-family: "B612", sans-serif;
   font-size: 1.3rem;
   line-height: 1.4em;
   margin: 10px 0 20px;
 }
 p {
   text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.4em;
+}
+h2 {
+  font-family: "Oleo Script Swash Caps", cursive;
+  text-align: center;
+  color: #F2D8C1;
+  text-shadow: 4px 4px 0px #302b3a;
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+h3 {
+  font-family: "B612", sans-serif;
+  color: #d5b9b1;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 15px;
 }
 blockquote {
   margin: 0 25px;
@@ -161,35 +172,57 @@ blockquote {
 ul {
   list-style-type: circle;
 }
-h2 {
-  font-family: 'Oleo Script Swash Caps', cursive;
-  text-align: center;
-  color: #F2D8C1;
-  text-shadow: 2.5px 3px 0px #8b6364;
-  font-size: 4.5rem;
-  margin-bottom: 15px;
-}
-h3 {
-  font-family: 'B612', sans-serif;
-  color: #d5b9b1;
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-}
 a {
   color: #e4a999;
 }
 a:hover {
   color: #bb7897;
 }
+.iframe {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  height: 400px;
+}
+.iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+}
+@media (min-width: 800px) {
+  p {
+    font-size: 1.4rem;
+  }
+  h2 {
+    text-shadow: 2.5px 3px 0px #302b3a;
+    font-size: 4.5rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  .iframe {
+    display: block;
+    max-width: 800px;
+    height: 500px;
+  }
+  .iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+  }
+}
 /* NAVIGATION */
 .navigation {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 80px;
+  height: 100px;
   z-index: 5;
-  background-color: #030104;
+  background: #030104;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -199,36 +232,22 @@ a:hover {
   text-decoration: none;
   color: #cbd3c4;
   font-size: 20px;
-  font-family: 'B612', sans-serif;
+  font-family: "B612", sans-serif;
   text-transform: uppercase;
-  padding: 28px;
-  background-repeat: no-repeat;
-  background-position: center;
+  padding: 0px;
+  transform: rotate(-35deg);
 }
 .navigation a:hover {
   color: #73254c;
-  background-repeat: no-repeat;
-  background-position: center;
 }
-.what-link:hover {
-  background: url(images/flashlight.png);
-  background-size: 100px auto;
-}
-.where-link:hover {
-  background: url(images/smores.png);
-  background-size: 62px auto;
-}
-.when-link:hover {
-  background: url(images/compass.png);
-  background-size: 51px auto;
-}
-.who-link:hover {
-  background: url(images/sleeping-bag.png);
-  background-size: 112px auto;
-}
-.rsvp-link:hover {
-  background: url(images/beer.png);
-  background-size: 52px auto;
+@media (min-width: 800px) {
+  .navigation {
+    height: 80px;
+  }
+  .navigation a {
+    transform: rotate(0deg);
+    padding: 28px;
+  }
 }
 .footer {
   padding: 20px 0 50px;
@@ -247,119 +266,95 @@ a:hover {
 }
 /* SPLASH */
 .hero {
-  margin-top: 80px;
+  margin: 80px 5% 0;
   background: url(../img/peony.jpg);
   height: 90vh;
   background-size: 100% auto;
   background-position: center center;
 }
-.super-splash-header {
-  font-family: 'Oleo Script Swash Caps', cursive;
+.hero .super-splash-header {
+  font-family: "Oleo Script Swash Caps", cursive;
   text-align: center;
   color: #eee1d6;
   text-shadow: 4px 5px 0px #360b1c;
-  font-size: 10rem;
+  font-size: 7rem;
   padding: 10vh 0 20px;
 }
-.super-splash-subline {
-  font-family: 'Oleo Script Swash Caps', cursive;
+.hero .super-splash-subline {
+  font-family: "Oleo Script Swash Caps", cursive;
   color: #F2D8C1;
   text-align: center;
-  text-shadow: 3px 2.5px 0px #8b6364;
-  font-size: 4rem;
+  text-shadow: 2px 1.75px 0px #8b6364;
+  font-size: 2.6rem;
 }
-.super-splash-dateline {
-  font-family: 'B612', sans-serif;
+.hero .super-splash-dateline {
+  font-family: "B612", sans-serif;
   color: #F2D8C1;
   text-align: center;
   text-shadow: 0px 0px 0px #360b1c;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
 }
-.super-splash-location {
-  font-family: 'B612', sans-serif;
+.hero .super-splash-location {
+  font-family: "B612", sans-serif;
   color: #eee1d6;
   text-transform: capitalize;
   text-align: center;
   text-shadow: 0px 0px 0px #360b1c;
-  font-size: 2rem;
+  font-size: 1.6rem;
+}
+@media (min-width: 800px) {
+  .hero .super-splash-header {
+    font-size: 10rem;
+  }
+  .hero .super-splash-subline {
+    font-size: 4rem;
+    text-shadow: 3px 2.5px 0px #8b6364;
+  }
+  .hero .super-splash-dateline {
+    font-size: 2rem;
+  }
+  .hero .super-splash-location {
+    font-size: 1.8rem;
+  }
 }
 /* MAIN CONTENT */
 .main-section {
   padding: 90px 20px 80px;
 }
-/* @media only screen and (min-width: 1050px) {
-    .main-content {
-        display        : flex;
-        flex-flow      : row wrap;
-        justify-content: space-between;
-        align-items    : stretch;
-        align-content  : space-around;
-    }
-} */
-.where iframe {
-  margin: 0 auto;
-  display: block;
-}
 .who img {
-  max-width: 200px;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto 20px;
 }
-@media only screen and (max-width: 700px) {
-  .iframe {
-    position: relative;
-    height: 600px;
+.lodging ul {
+  max-width: 300px;
+  margin: 0 auto;
+}
+@media (min-width: 800px) {
+  .who p {
+    max-width: 500px;
+    text-align: left;
   }
-  .iframe iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 600px;
+  .flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: space-around;
   }
-  p {
-    font-size: 1.2rem;
-    line-height: 1.4em;
+  .flex-container .half {
+    flex: 1;
+    padding: 0 1%;
   }
-  blockquote {
-    font-size: 1.1rem;
-    line-height: 1.4em;
-  }
-  .main-section {
-    padding: 50px 20px 60px;
-  }
-  .hero {
-    margin: 80px 5% 0;
-  }
-  h2 {
-    font-family: 'Oleo Script Swash Caps', cursive;
-    text-align: center;
-    color: #F2D8C1;
-    text-shadow: 4px 4px 0px #302b3a;
-    font-size: 3rem;
-    margin-bottom: 15px;
-  }
-  h3 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-  }
-  .super-splash-header {
-    font-size: 7rem;
-  }
-  .super-splash-subline {
-    font-size: 2.6rem;
-    text-shadow: 2px 1.75px 0px #8b6364;
-  }
-  .super-splash-dateline {
-    font-size: 1.8rem;
-  }
-  .navigation {
-    height: 66px;
-  }
-  .navigation a {
-    padding: 0px;
-    transform: rotate(-35deg);
+  .flex-container .half img {
+    float: right;
   }
 }
-.rsvp {
-  flex: 1;
-  text-align: center;
+@media (min-width: 1500px) {
+  .main-content {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
 }
