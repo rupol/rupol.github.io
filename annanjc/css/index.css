@@ -137,7 +137,7 @@ main {
 p,
 blockquote,
 ul {
-  font-family: "B612", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.3rem;
   line-height: 1.4em;
   margin: 10px 0 20px;
@@ -148,19 +148,21 @@ p {
   line-height: 1.4em;
 }
 h2 {
-  font-family: "Oleo Script Swash Caps", cursive;
+  font-family: 'Great Vibes', cursive;
   text-align: center;
   color: #F2D8C1;
-  text-shadow: 4px 4px 0px #302b3a;
   font-size: 3rem;
   margin-bottom: 15px;
 }
 h3 {
-  font-family: "B612", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #d5b9b1;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 15px;
+  letter-spacing: 7px;
+  font-weight: 200;
+  font-style: italic;
 }
 blockquote {
   margin: 0 25px;
@@ -203,16 +205,15 @@ a:hover {
   left: 0;
   width: 100%;
 }
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   p {
     font-size: 1.4rem;
   }
   h2 {
-    text-shadow: 2.5px 3px 0px #302b3a;
     font-size: 4.5rem;
   }
   h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .iframe {
     display: block;
@@ -244,7 +245,7 @@ a:hover {
   text-decoration: none;
   color: #cbd3c4;
   font-size: 20px;
-  font-family: "B612", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   padding: 0px;
   transform: rotate(-35deg);
@@ -252,7 +253,7 @@ a:hover {
 .navigation a:hover {
   color: #73254c;
 }
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .navigation {
     height: 80px;
   }
@@ -262,13 +263,16 @@ a:hover {
   }
 }
 .footer {
-  padding: 20px 0 50px;
+  padding: 50px 0;
   background: #302b3a;
   color: #646368;
   text-align: center;
 }
 .footer p {
   font-size: 1rem;
+  font-style: italic;
+  font-weight: 200;
+  letter-spacing: 2px;
 }
 .footer a {
   color: #9e8a85;
@@ -278,50 +282,69 @@ a:hover {
 }
 /* SPLASH */
 .hero {
-  padding: 80px 5% 0;
+  padding: 100px 0;
   background: url(../img/peony.jpg);
-  height: 90vh;
+  height: 85vh;
   background-size: 100% auto;
   background-position: center center;
   background-repeat: no-repeat;
 }
-.hero .super-splash-header {
-  font-family: "Oleo Script Swash Caps", cursive;
+.hero .header-background {
+  max-width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: #030104;
+  opacity: 0.9;
+  position: relative;
+  margin: 0 auto;
+}
+.hero .header-background .super-splash-header {
+  font-family: 'Great Vibes', cursive;
   text-align: center;
   color: #eee1d6;
-  text-shadow: 4px 5px 0px #360b1c;
   font-size: 7rem;
-  padding: 10vh 0 20px;
+  line-height: 0.58;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-64%, -50%);
 }
 .hero .super-splash-subline {
-  font-family: "Oleo Script Swash Caps", cursive;
-  color: #F2D8C1;
+  font-family: 'Montserrat', sans-serif;
+  color: #eee1d6;
   text-align: center;
-  text-shadow: 2px 1.75px 0px #8b6364;
-  font-size: 2.6rem;
+  font-size: 2rem;
+  letter-spacing: 6.5px;
+  font-weight: 900;
 }
 .hero .super-splash-dateline {
-  font-family: "B612", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #F2D8C1;
   text-align: center;
-  text-shadow: 0px 0px 0px #360b1c;
   font-size: 1.8rem;
+  letter-spacing: 7px;
+  font-weight: 900;
 }
 .hero .super-splash-location {
-  font-family: "B612", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #eee1d6;
   text-transform: capitalize;
   text-align: center;
-  text-shadow: 0px 0px 0px #360b1c;
   font-size: 1.6rem;
+  letter-spacing: 4px;
+  font-weight: 900;
 }
-@media (min-width: 800px) {
-  .hero .super-splash-header {
+@media (min-width: 900px) {
+  .hero .header-background {
+    max-width: 400px;
+    height: 400px;
+  }
+  .hero .header-background .super-splash-header {
     font-size: 10rem;
   }
   .hero .super-splash-subline {
-    font-size: 4rem;
-    text-shadow: 3px 2.5px 0px #8b6364;
+    font-size: 2rem;
+    letter-spacing: 8px;
   }
   .hero .super-splash-dateline {
     font-size: 2rem;
@@ -341,11 +364,7 @@ a:hover {
   height: auto;
   margin: 0 auto 20px;
 }
-.lodging ul {
-  max-width: 300px;
-  margin: 0 auto;
-}
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .who p {
     max-width: 500px;
     text-align: left;
@@ -354,7 +373,7 @@ a:hover {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     align-content: space-around;
   }
   .flex-container .half {
