@@ -364,6 +364,11 @@ a:hover {
 .main-section {
   padding: 90px 20px 80px;
 }
+.middle-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 90%;
+}
 .who img {
   display: block;
   width: 100%;
