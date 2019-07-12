@@ -2201,6 +2201,9 @@ input, select, textarea {
 		.image-3:after {
 			background-image: url(../../images/ruth-devs-webs.gif);
 		}
+		.image-4:after {
+			background-image: url(../../images/anna-jc.gif);
+		}
 
 		.image img {
 			display: block;
