@@ -1,0 +1,418 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+section,
+aside,
+footer {
+  margin: 0;
+  padding: 2rem;
+  color: #000000;
+}
+main {
+  background: #fbfaef;
+}
+h1,
+h2 {
+  font-family: "Righteous", sans-serif;
+  text-transform: uppercase;
+}
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+button {
+  font-family: "Open Sans", sans-serif;
+}
+h1 {
+  font-size: 4.5rem;
+  padding-bottom: 1.5rem;
+}
+h2 {
+  font-size: 3.5rem;
+  padding-bottom: 1rem;
+}
+h3 {
+  font-size: 2.75rem;
+  padding-bottom: 0.75rem;
+}
+h4 {
+  font-size: 2.2rem;
+  padding-bottom: 0.5rem;
+}
+h5 {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+h6 {
+  font-size: 1.75rem;
+  padding-bottom: 0.5rem;
+  font-style: italic;
+}
+p {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  padding-bottom: 0.5rem;
+}
+ul {
+  list-style-type: circle;
+  padding-left: 2rem;
+}
+ul li {
+  font-size: 1.6rem;
+  line-height: 2.25rem;
+}
+main .flex-container {
+  margin-bottom: 4rem;
+}
+@media (min-width: 640px) {
+  main .flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+}
+main .wrapper {
+  margin: auto;
+  max-width: rem-calc(1200);
+}
+main .flex-half {
+  flex: 1;
+}
+.header {
+  width: 100%;
+}
+.header nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 5;
+  background-color: #7c6965;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header nav a {
+  text-decoration: none;
+  color: #fbfaef;
+  font-size: 1.75rem;
+  font-family: "Righteous", sans-serif;
+  text-transform: uppercase;
+  padding: 29px 0;
+}
+@media screen and (min-width: 640px) {
+  .header nav a {
+    font-size: 2.25rem;
+    letter-spacing: 2px;
+  }
+}
+.header nav a:hover {
+  color: #f3cc40;
+}
+.footer {
+  background: #70ccbf;
+  width: 100%;
+  text-align: center;
+}
+.intro {
+  margin-top: 80px;
+  background-image: url(../images/background.jpg);
+}
+.intro .flex-container {
+  justify-content: center;
+  align-items: center;
+}
+.intro .flex-container .flex-quarter {
+  flex: 2;
+}
+.intro .flex-container .flex-three-quarters {
+  flex: 3;
+}
+.intro .flex-container .flex-quarter,
+.intro .flex-container .flex-three-quarters {
+  text-align: center;
+  margin: 2rem;
+}
+@media (min-width: 640px) {
+  .intro .flex-container .intro-img {
+    text-align: right;
+  }
+}
+.intro .flex-container .intro-img img {
+  border-radius: 50%;
+  border: 3px solid #fbfaef;
+  flex: 1;
+}
+.intro .flex-container .intro-text h3 {
+  margin-bottom: 2rem;
+}
+.intro .flex-container .intro-text .btn {
+  font-size: 3rem;
+  background-color: #70ccbf;
+  padding: 0.5rem 2rem;
+  border: #000000 solid 2px;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+  position: relative;
+}
+.intro .flex-container .intro-text .btn a {
+  text-decoration: none;
+  color: #fbfaef;
+}
+.intro .flex-container .intro-text .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.intro .flex-container .intro-text .btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 640px) {
+  .intro .flex-container .intro-text {
+    text-align: left;
+  }
+}
+.intro .intro-about {
+  margin: 0 3% 5rem;
+  padding: 2rem;
+  border: #7c6965 solid 2px;
+  background: #fbfaef;
+  border-radius: 0.5rem;
+  opacity: 0.8;
+}
+@media (min-width: 640px) {
+  .intro .intro-about {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.skills {
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+.skills h2 {
+  padding-left: 2rem;
+  margin-bottom: 4rem;
+}
+.skills .skills-box {
+  margin: 0 3% 5rem;
+  padding: 2rem;
+  border: #7c6965 solid 2px;
+  background: #fbfaef;
+  border-radius: 0.5rem;
+  box-shadow: 5px 8px 0px #f3cc40, 10px 16px 0px #e48545, 15px 24px 0px #e6673e;
+}
+@media (min-width: 1500px) {
+  .skills {
+    max-width: 1500px;
+  }
+}
+.experience {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+.experience h2 {
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+.experience h3 {
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+.experience .experience-box {
+  margin: 0 3% 5rem;
+  padding: 2rem;
+  border: #7c6965 solid 2px;
+  background: #fbfaef;
+  border-radius: 0.5rem;
+  box-shadow: 5px 8px 0px #fcb8b9, 10px 16px 0px #f6c9f4, 15px 24px 0px #974ca7;
+}
+.experience .education-experience {
+  margin-bottom: 8rem;
+}
+@media (min-width: 1500px) {
+  .experience {
+    max-width: 1500px;
+  }
+}
+.contact {
+  padding: 5rem 3rem 3rem;
+  text-align: center;
+  width: 100%;
+  background: #70ccbf;
+}
+.contact .contact-text {
+  margin-bottom: 8rem;
+}
+.contact h2 {
+  margin-bottom: 2rem;
+}
+.contact a {
+  color: #fbfaef;
+}
+.contact a:hover {
+  color: #f3cc40;
+}
+.contact .tel {
+  text-decoration: none;
+}
+@media (min-width: 640px) {
+  .contact .icons {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+.contact .icon {
+  text-decoration: none;
+  border-bottom: none;
+  color: #000000;
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: "Font Awesome 5 Brands";
+  padding: 1rem;
+}
+.contact .icon > .label {
+  display: none;
+}
