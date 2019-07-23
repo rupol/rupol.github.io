@@ -258,15 +258,18 @@ main .flex-half {
   margin-top: 80px;
   background-image: url(../images/background.jpg);
 }
-.intro .flex-container {
-  justify-content: center;
-  align-items: center;
-}
-.intro .flex-container .flex-quarter {
-  flex: 2;
-}
-.intro .flex-container .flex-three-quarters {
-  flex: 3;
+@media (min-width: 640px) {
+  .intro .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro .flex-container .flex-quarter {
+    flex: 2;
+  }
+  .intro .flex-container .flex-three-quarters {
+    flex: 3;
+  }
 }
 .intro .flex-container .flex-quarter,
 .intro .flex-container .flex-three-quarters {
@@ -277,11 +280,13 @@ main .flex-half {
   .intro .flex-container .intro-img {
     text-align: right;
   }
+  .intro .flex-container .intro-img img {
+    flex: 1;
+  }
 }
 .intro .flex-container .intro-img img {
   border-radius: 50%;
   border: 3px solid #fbfaef;
-  flex: 1;
 }
 .intro .flex-container .intro-text h3 {
   margin-bottom: 2rem;
@@ -410,7 +415,7 @@ main .flex-half {
   color: #000000;
   font-size: 3rem;
   font-weight: 400;
-  font-family: "Font Awesome 5 Brands";
+  font-family: 'Font Awesome 5 Brands';
   padding: 1rem;
 }
 .contact .icon > .label {

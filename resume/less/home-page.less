@@ -3,15 +3,18 @@
   background-image: url(../images/background.jpg);
 
   .flex-container {
-    justify-content: center;
-    align-items: center;
+    @media @desktop {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-    .flex-quarter {
-      flex: 2;
-    }
+      .flex-quarter {
+        flex: 2;
+      }
 
-    .flex-three-quarters {
-      flex: 3;
+      .flex-three-quarters {
+        flex: 3;
+      }
     }
 
     .flex-quarter,
@@ -24,12 +27,14 @@
       @media @desktop {
         text-align: right;
         // margin: 50px 5% 50px 0;
+        img {
+          flex: 1;
+        }
       }
 
       img {
         border-radius: 50%;
         border: 3px solid @color-white;
-        flex: 1;
       }
     }
 
@@ -171,7 +176,7 @@
     color: #000000;
     font-size: 3rem;
     font-weight: 400;
-    font-family: "Font Awesome 5 Brands";
+    font-family: 'Font Awesome 5 Brands';
     padding: 1rem;
   }
 
