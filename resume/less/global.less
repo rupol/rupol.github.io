@@ -37,7 +37,7 @@ h1 {
 
 h2 {
   font-size: 3.5rem;
-  padding-bottom: 1rem;
+  .margin-bottom-medium();
 }
 
 h3 {
@@ -78,12 +78,19 @@ ul {
 }
 
 main {
+  .flex-quarter,
+  .flex-three-quarters {
+    text-align: center;
+    margin: 1rem;
+  }
+
   .flex-container {
     .margin-bottom();
 
     @media @desktop {
       .flex();
       justify-content: space-evenly;
+      align-items: flex-start;
     }
   }
 
@@ -94,5 +101,13 @@ main {
 
   .flex-half {
     flex: 1;
+  }
+
+  .flex-quarter {
+    flex: 2;
+  }
+
+  .flex-three-quarters {
+    flex: 3;
   }
 }
