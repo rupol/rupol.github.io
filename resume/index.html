@@ -15,6 +15,8 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Righteous&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" type="image/png" href="./favicon.png" />
+    <meta name="theme-color" content="#fcb8b9" />
 
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -27,25 +29,16 @@
         <header class="header">
           <nav>
             <a href="#intro" class="nav-link">Intro</a>
-            <a href="#skills" class="nav-link">Skills</a>
-            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#skills" class="nav-link">Resume</a>
             <a href="#contact" class="nav-link">Contact</a>
+            <a href="https://rupol.github.io/">Portfolio</a>
           </nav>
         </header>
 
         <section class="intro" id="intro">
-          <div class="flex-container">
-            <div class="intro-img flex-quarter">
-              <img src="images/headshot.jpg" alt="image of Ruth Poliakon" />
-            </div>
-
-            <div class="intro-text flex-three-quarters">
-              <h1>Ruth Poliakon</h1>
-              <h2>Full Stack Web Development</h2>
-              <button class="btn">
-                <a href="https://rupol.github.io/">View My Portfolio</a>
-              </button>
-            </div>
+          <div class="intro-text flex-container">
+            <h1>Ruth Poliakon</h1>
+            <h2>Full Stack Web Development</h2>
           </div>
           <div class="intro-about">
             <h2>About Me</h2>
@@ -73,7 +66,7 @@
             </div>
             <div class="skills" id="skills">
               <h2>Skills</h2>
-              <div class="flex-container">
+              <div class="skills-flex-container">
                 <div class="skills-box"><p>JavaScript</p></div>
                 <div class="skills-box"><p>React</p></div>
                 <div class="skills-box"><p>HTML</p></div>
@@ -99,8 +92,8 @@
             <div class="education" id="education">
               <h2>Education and Training</h2>
               <div class="education-box">
-                <h4>Lambda School</h4>
-                <h5>Full Stack Web Development</h5>
+                <h3>Lambda School</h3>
+                <h4>Full Stack Web Development</h4>
                 <ul>
                   <li>
                     Engaged in a 6+ month Computer Science & Software
@@ -111,11 +104,11 @@
                 </ul>
               </div>
               <div class="education-box">
-                <h4>Colorado State University</h4>
-                <h5>BS Fish, Wildlife, and Conservation Biology</h5>
+                <h3>Colorado State University</h3>
+                <h4>BS Fish, Wildlife, and Conservation Biology</h4>
                 <ul>
                   <li>
-                    <h6>Honors</h6>
+                    <h5>Honors</h5>
                     <p>
                       Magna Cum Laude, Lilla B. Morgan Scholarship, Dean's List,
                       Philip A. Connolly Memorial Scholarship
@@ -124,14 +117,14 @@
                 </ul>
               </div>
               <div class="education-box">
-                <h4>Other Courses</h4>
+                <h3>Other Courses</h3>
                 <ul>
                   <li>
-                    <h5>freeCodeCamp</h5>
+                    <h4>freeCodeCamp</h4>
                     <p>Responsive Web Design Developer Certification</p>
                   </li>
                   <li>
-                    <h5>Udemy</h5>
+                    <h4>Udemy</h4>
                     <p>Advanced CSS and Sass, JavaScript</p>
                   </li>
                 </ul>
@@ -143,11 +136,11 @@
               <div class="projects">
                 <h2>Projects</h2>
                 <div class="experience-box">
-                  <h4><a href="https://get-guidr.netlify.com/">Guidr</a></h4>
-                  <h6>
+                  <h3><a href="https://get-guidr.netlify.com/">Guidr</a></h3>
+                  <h4 class="project-h4">
                     Marketing page for an app that helps backcountry guides of
                     all types share their private and professional trips
-                  </h6>
+                  </h4>
                   <ul>
                     <li>
                       Utilized Git workow in collaboration with a Front End
@@ -168,12 +161,14 @@
                   </ul>
                 </div>
                 <div class="experience-box">
-                  <h4>
+                  <h3>
                     <a href="http://champagneofpeople.com/"
                       >Anna and JC are Getting Married</a
                     >
+                  </h3>
+                  <h4 class="project-h4">
+                    Wedding invitation and RSVP website
                   </h4>
-                  <h6>Wedding invitation and RSVP website</h6>
                   <ul>
                     <li>
                       Designed and created the Flexbox framework and html markup
@@ -193,8 +188,8 @@
               <div class="employment">
                 <h2>Employment</h2>
                 <div class="experience-box">
-                  <h4>Teacher | Denver Academy</h4>
-                  <h5>1 year, 6 months</h5>
+                  <h3>Teacher | Denver Academy</h3>
+                  <h4>1 year, 6 months</h4>
                   <ul>
                     <li>
                       Created a completely paperless learning environment by
@@ -215,10 +210,10 @@
                   </ul>
                 </div>
                 <div class="experience-box">
-                  <h4>
+                  <h3>
                     Laboratory Assistant | University of California, Berkeley
-                  </h4>
-                  <h5>2 years, 2 months</h5>
+                  </h3>
+                  <h4>2 years, 2 months</h4>
                   <ul>
                     <li>
                       Led an eight person team of laboratory technicians and

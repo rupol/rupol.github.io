@@ -4,7 +4,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
   <head>
     <title>Ruth Poliakon | Full Stack Web Development</title>
     <meta charset="utf-8" />
@@ -17,15 +17,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="shortcut icon" type="image/png" href="./favicon.png" />
+    <meta name="theme-color" content="#fcb8b9" />
   </head>
   <body class="is-preload">
     <!-- Header -->
     <div id="header">
-      <a href="#contact"><span class="logo icon fa-paper-plane"></span></a>
+      <span class="logo icon fa-paper-plane"></span>
       <h1>Ruth Poliakon</h1>
-      <p>
+      <h2 id="subheadline">
         Full Stack Web Development
-      </p>
+      </h2>
     </div>
 
     <!-- Main -->
@@ -44,7 +46,7 @@
           <a
             href="https://get-guidr.netlify.com/"
             class="image image-1 icon solid"
-            ><img src="images/guidr-initial.jpg" alt=""
+            ><img src="images/guidr-initial.jpg" alt="Guidr project preview"
           /></a>
           <div class="content">
             <h3>Guidr</h3>
@@ -61,7 +63,9 @@
           <a
             href="http://champagneofpeople.com/"
             class="image image-2 icon solid"
-            ><img src="images/anna-jc-initial.jpg" alt=""
+            ><img
+              src="images/anna-jc-initial.jpg"
+              alt="Anna and JC project preview"
           /></a>
           <div class="content">
             <h3>Anna and JC are Getting Married</h3>
@@ -75,7 +79,9 @@
         </section>
         <section class="feature left">
           <a href="http://www.claystcoop.com/" class="image image-3 icon solid"
-            ><img src="images/clay-street-coop-initial.jpg" alt=""
+            ><img
+              src="images/clay-street-coop-initial.jpg"
+              alt="Clay St Coop project preview"
           /></a>
           <div class="content">
             <h3>Clay Street Coop</h3>
@@ -95,7 +101,9 @@
           <a
             href="https://github.com/rupol/Solstice-Camp"
             class="image image-4 icon solid"
-            ><img src="images/solstice-camp-initial.jpg" alt=""
+            ><img
+              src="images/solstice-camp-initial.jpg"
+              alt="Solstice Camp project preview"
           /></a>
           <div class="content">
             <h3>Solstice Camp</h3>
@@ -304,21 +312,45 @@
         <form action="https://formspree.io/r.poliakon@gmail.com" method="POST">
           <div class="row">
             <div class="col-6 col-12-mobilep">
-              <input type="text" name="name" placeholder="Name" />
+              <label for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                title="Name"
+                id="name"
+              />
             </div>
             <div class="col-6 col-12-mobilep">
-              <input type="email" name="email" placeholder="Email" />
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                title="email"
+                id="email"
+              />
             </div>
             <div class="col-12">
+              <label for="message">Message</label>
               <textarea
                 name="message"
                 placeholder="Message"
                 rows="6"
+                title="Message"
+                id="message"
               ></textarea>
             </div>
             <div class="col-12">
               <ul class="actions special">
-                <li><input type="submit" value="Send Message" /></li>
+                <li>
+                  <input
+                    type="submit"
+                    value="Send Message"
+                    title="Submit"
+                    id="submit"
+                  />
+                </li>
               </ul>
             </div>
           </div>

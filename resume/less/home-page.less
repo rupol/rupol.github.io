@@ -4,68 +4,21 @@
 
   .flex-container {
     flex-flow: row wrap;
-  }
-
-  .intro-img {
-    @media @desktop {
-      text-align: right;
-      // margin: 50px 5% 50px 0;
-      img {
-        flex: 1;
-      }
-    }
-
-    img {
-      border-radius: 50%;
-      border: 3px solid @color-white;
-    }
+    align-items: baseline;
   }
 
   .intro-text {
-    h3 {
-      .margin-bottom-medium();
-    }
+    margin: 50px 20px;
+  }
 
-    .btn {
-      font-size: 3rem;
-      background-color: @downy;
-      padding: 0.5rem 2rem;
-      border: #000000 solid 2px;
-      border-radius: 0.5rem;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-
-      transition: all 0.2s;
-      position: relative;
-    }
-
-    .btn a {
-      text-decoration: none;
-      color: @color-white;
-    }
-
-    .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    .btn:active {
-      transform: translateY(-1px);
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    }
+  .intro-about {
+    .box-style();
+    opacity: 0.8;
 
     @media @desktop {
-      text-align: left;
+      width: 80%;
+      .center();
     }
-  }
-}
-
-.intro-about {
-  .box-style();
-  opacity: 0.8;
-
-  @media @desktop {
-    width: 80%;
-    .center();
   }
 }
 
@@ -80,18 +33,22 @@
     width: 100%;
     .margin-bottom-big();
 
-    .flex-container {
+    .skills-flex-container {
+      .flex();
+      justify-content: space-evenly;
+      align-items: flex-start;
       margin-bottom: 0;
     }
 
     .skills-box {
       .box-style();
+      padding: 1rem;
       box-shadow: 5px 8px 0px @saffron, 10px 16px 0px @burnt-sienna,
         15px 24px 0px @burnt-sienna-red;
       text-align: center;
 
       p {
-        font-size: 1.5rem;
+        font-size: 2rem;
       }
     }
 
@@ -114,16 +71,17 @@
   .experience {
     .margin-bottom-big();
 
-    h3 {
-      .padding-left();
-      .margin-bottom-small();
-    }
-
     .experience-box {
       .box-style();
       text-align: left;
       box-shadow: 5px 8px 0px @melon, 10px 16px 0px @cherub,
         15px 24px 0px @affair;
+
+      .project-h4 {
+        font-size: 1.75rem;
+        padding-bottom: 0.5rem;
+        font-style: italic;
+      }
     }
 
     @media @large-screen {
@@ -148,7 +106,7 @@
   }
 
   a {
-    color: @color-white;
+    color: #000000;
   }
 
   a:hover {
@@ -206,23 +164,25 @@
     padding: 0;
   }
 
-  h3,
-  h5,
-  h6 {
-    font-size: 12pt;
-    margin: 0;
-    padding: 0;
-  }
-
-  h4 {
+  h3 {
     font-size: 12pt;
     margin: 0 0 2pt;
     padding: 0;
   }
 
+  h4 {
+    font-size: 12pt;
+    margin: 0;
+    padding: 0;
+  }
+
+  h5 {
+    font-size: 12pt;
+    margin: 0;
+    padding: 0;
+  }
+
   .header,
-  .intro-img,
-  .intro-text button,
   .intro-about,
   .contact,
   .footer {
@@ -231,11 +191,6 @@
 
   .intro {
     margin-top: 0;
-  }
-
-  .intro-text {
-    .flex();
-    align-items: center;
   }
 
   .contact-print {
@@ -266,9 +221,11 @@
     padding: 4pt !important;
     margin: 0 0 20pt !important;
 
-    h6 {
+    h4 {
       font-size: 10pt !important;
       line-height: 12pt;
+      margin: 0;
+      padding: 0;
     }
     li {
       font-size: 10pt !important;
@@ -282,7 +239,7 @@
   }
 
   .experience-box {
-    h4 {
+    h3 {
       margin: 0;
     }
   }
