@@ -236,7 +236,7 @@ main .flex-three-quarters {
   width: 100%;
   height: 80px;
   z-index: 5;
-  background-color: #7c6965;
+  background-color: #70ccbf;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -244,7 +244,7 @@ main .flex-three-quarters {
 }
 .header nav a {
   text-decoration: none;
-  color: #fbfaef;
+  color: #000000;
   font-size: 1.75rem;
   font-family: 'Righteous', sans-serif;
   text-transform: uppercase;
