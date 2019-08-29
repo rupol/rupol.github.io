@@ -2191,18 +2191,18 @@ input, select, textarea {
 		}
 
 		.image-1:after {
-			background-image: url(../../images/clay-street-coop.gif);
+			background-image: url(../../images/guidr.gif);
 		}
 
 		.image-2:after {
-			background-image: url(../../images/solstice-camp.gif);
+			background-image: url(../../images/anna-jc.gif);
 		}
 
 		.image-3:after {
-			background-image: url(../../images/ruth-devs-webs.gif);
+			background-image: url(../../images/clay-street-coop.gif);
 		}
 		.image-4:after {
-			background-image: url(../../images/anna-jc.gif);
+			background-image: url(../../images/solstice-camp.gif);
 		}
 
 		.image img {
