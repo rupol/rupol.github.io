@@ -145,12 +145,13 @@ footer {
   color: #000000;
 }
 main {
-  background: #fbfaef;
+  background-color: #fbfaef;
 }
 h1,
 h2 {
   font-family: 'Righteous', sans-serif;
   text-transform: uppercase;
+  padding-bottom: 2rem;
 }
 h3,
 h4,
@@ -160,31 +161,31 @@ ul,
 button {
   font-family: 'Open Sans', sans-serif;
 }
+h3,
+h4,
+h5,
+p {
+  padding-bottom: 0.5rem;
+}
 h1 {
   font-size: 6.5rem;
-  padding-bottom: 1.5rem;
 }
 h2 {
   font-size: 3.5rem;
-  margin-bottom: 2rem;
 }
 h3 {
   font-size: 2.2rem;
-  padding-bottom: 0.5rem;
 }
 h4 {
   font-size: 2rem;
-  padding-bottom: 0.5rem;
 }
 h5 {
   font-size: 1.75rem;
-  padding-bottom: 0.5rem;
   font-style: italic;
 }
 p {
   font-size: 1.75rem;
   line-height: 2.25rem;
-  padding-bottom: 0.5rem;
 }
 a {
   color: #000000;
@@ -213,13 +214,6 @@ main .flex-container {
     align-items: flex-start;
   }
 }
-main .wrapper {
-  margin: auto;
-  max-width: rem-calc(1200);
-}
-main .flex-half {
-  flex: 1;
-}
 main .flex-quarter {
   flex: 2;
 }
@@ -238,7 +232,7 @@ main .flex-three-quarters {
   z-index: 5;
   background-color: #70ccbf;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -248,7 +242,7 @@ main .flex-three-quarters {
   font-size: 1.75rem;
   font-family: 'Righteous', sans-serif;
   text-transform: uppercase;
-  padding: 29px 0;
+  padding: 30px 0;
 }
 @media screen and (min-width: 640px) {
   .header nav a {
@@ -264,12 +258,20 @@ main .flex-three-quarters {
   width: 100%;
   text-align: center;
 }
+.skills,
+.education,
+.experience,
+.projects {
+  margin-bottom: 8rem;
+}
 .intro {
   margin-top: 80px;
   background-image: url(../images/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .intro .flex-container {
-  flex-flow: row wrap;
   align-items: baseline;
 }
 .intro .intro-text {
@@ -279,7 +281,7 @@ main .flex-three-quarters {
   margin: 0 3% 5rem;
   padding: 2rem;
   border: #7c6965 solid 2px;
-  background: #fbfaef;
+  background-color: #fbfaef;
   border-radius: 0.5rem;
   opacity: 0.8;
 }
@@ -292,12 +294,8 @@ main .flex-three-quarters {
 .main-content {
   margin-top: 3rem;
 }
-.main-content .contact-print {
-  display: none;
-}
 .main-content .skills {
   width: 100%;
-  margin-bottom: 8rem;
 }
 .main-content .skills .skills-flex-container {
   display: flex;
@@ -310,7 +308,7 @@ main .flex-three-quarters {
   margin: 0 3% 5rem;
   padding: 2rem;
   border: #7c6965 solid 2px;
-  background: #fbfaef;
+  background-color: #fbfaef;
   border-radius: 0.5rem;
   padding: 1rem;
   box-shadow: 5px 8px 0px #f3cc40, 10px 16px 0px #e48545, 15px 24px 0px #e6673e;
@@ -319,32 +317,27 @@ main .flex-three-quarters {
 .main-content .skills .skills-box p {
   font-size: 2rem;
 }
+.main-content .skills .skills-box:last-child {
+  margin-bottom: 0;
+}
 @media (min-width: 1500px) {
   .main-content .skills {
     max-width: 1500px;
   }
 }
-.main-content .education {
-  margin-bottom: 8rem;
-}
-.main-content .education .education-box {
+.main-content .experience-box,
+.main-content .education-box {
   margin: 0 3% 5rem;
   padding: 2rem;
   border: #7c6965 solid 2px;
-  background: #fbfaef;
+  background-color: #fbfaef;
   border-radius: 0.5rem;
+}
+.main-content .education .education-box {
   text-align: left;
   box-shadow: 5px 8px 0px #70ccbf, 10px 16px 0px #06aed5, 15px 24px 0px #f3cc40;
 }
-.main-content .experience {
-  margin-bottom: 8rem;
-}
 .main-content .experience .experience-box {
-  margin: 0 3% 5rem;
-  padding: 2rem;
-  border: #7c6965 solid 2px;
-  background: #fbfaef;
-  border-radius: 0.5rem;
   text-align: left;
   box-shadow: 5px 8px 0px #fcb8b9, 10px 16px 0px #f6c9f4, 15px 24px 0px #974ca7;
 }
@@ -358,14 +351,11 @@ main .flex-three-quarters {
     max-width: 1500px;
   }
 }
-.main-content .experience .projects {
-  margin-bottom: 8rem;
-}
 .contact {
   padding: 5rem 3rem 3rem;
   text-align: center;
   width: 100%;
-  background: #70ccbf;
+  background-color: #70ccbf;
 }
 .contact .contact-text {
   margin-bottom: 8rem;
@@ -397,6 +387,9 @@ main .flex-three-quarters {
 .contact .icon > .label {
   display: none;
 }
+.contact-print {
+  display: none;
+}
 @media print {
   .main-content {
     width: 100%;
@@ -405,33 +398,33 @@ main .flex-three-quarters {
   }
   body {
     line-height: 1.3;
-    background: #fff !important;
     color: #000;
+  }
+  main,
+  .skills-box,
+  .education-box,
+  .experience-box {
+    background-color: #fff;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    padding: 0;
+    margin: 0;
   }
   h1 {
     font-size: 30pt;
     margin: 0 30pt 0 0;
-    padding: 0;
   }
   h2 {
     font-size: 16pt;
-    margin-bottom: 0 !important;
-    padding: 0;
   }
-  h3 {
-    font-size: 12pt;
-    margin: 0 0 2pt;
-    padding: 0;
-  }
-  h4 {
-    font-size: 12pt;
-    margin: 0;
-    padding: 0;
-  }
+  h3,
+  h4,
   h5 {
     font-size: 12pt;
-    margin: 0;
-    padding: 0;
   }
   .header,
   .intro-about,
@@ -442,69 +435,79 @@ main .flex-three-quarters {
   .intro {
     margin-top: 0;
   }
+  .intro .intro-text {
+    margin: 0;
+  }
   .contact-print {
-    display: flex !important;
+    display: flex;
     font-size: 10pt;
     margin-top: 5pt;
   }
   .contact-print div {
     margin: 5pt;
   }
+  .contact-print div a {
+    text-decoration: none;
+  }
   .skills,
   .education,
   .experience,
   .projects {
-    margin: 0 0 25pt !important;
+    margin-bottom: 25pt;
   }
   .skills h2 {
     margin-top: 15pt;
   }
-  .experience-box,
-  .education-box {
-    padding: 4pt !important;
-    margin: 0 0 20pt !important;
+  .main-content .experience-box,
+  .main-content .education-box {
+    margin: 0 0 20pt;
+    padding: 4pt;
+    border: #7c6965 solid 2px;
+    background-color: #fbfaef;
+    border-radius: 0.5rem;
   }
-  .experience-box h4,
-  .education-box h4 {
-    font-size: 10pt !important;
-    line-height: 12pt;
-    margin: 0;
-    padding: 0;
-  }
-  .experience-box li,
-  .education-box li {
-    font-size: 10pt !important;
-    line-height: 12pt;
-  }
-  .experience-box p,
-  .education-box p {
-    font-size: 10pt !important;
+  .main-content .experience-box h4,
+  .main-content .education-box h4,
+  .main-content .experience-box h5,
+  .main-content .education-box h5,
+  .main-content .experience-box li,
+  .main-content .education-box li,
+  .main-content .experience-box p,
+  .main-content .education-box p {
+    font-size: 10pt;
     line-height: 12pt;
   }
-  .experience-box h3 {
-    margin: 0;
+  .main-content .education .education-box {
+    box-shadow: 2px 5px 0px #70ccbf, 7px 13px 0px #06aed5, 12px 21px 0px #f3cc40;
   }
-  .skills-box {
-    padding: 3pt !important;
-    margin: 0 0 10pt !important;
+  .main-content .experience .experience-box {
+    box-shadow: 2px 5px 0px #fcb8b9, 7px 13px 0px #f6c9f4, 12px 21px 0px #974ca7;
   }
-  .skills-box p {
-    font-size: 9pt !important;
+  .main-content .experience .experience-box .project-h4 {
+    font-size: 10pt;
   }
-  .flex-container {
+  .main-content .skills .skills-box {
+    margin: 0 0 20pt;
+    padding: 4pt;
+    border: #7c6965 solid 2px;
+    background-color: #fbfaef;
+    border-radius: 0.5rem;
+    box-shadow: 2px 5px 0px #f3cc40, 7px 13px 0px #e48545, 12px 21px 0px #e6673e;
+  }
+  .main-content .skills .skills-box p {
+    font-size: 9pt;
+  }
+  main .flex-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: flex-start;
-    margin: 0 !important;
-    padding: 0 !important;
+    margin-bottom: 0;
   }
-  .flex-quarter,
-  .flex-three-quarters {
-    margin: 0 10pt !important;
-    padding: 0 !important;
+  main .flex-quarter,
+  main .flex-three-quarters {
+    margin: 0 10pt;
   }
-  /** Setting margins */
   @page {
     margin: 0.75cm;
   }

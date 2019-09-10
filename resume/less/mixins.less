@@ -12,12 +12,36 @@
   margin: 0 3% 5rem;
   padding: @padding;
   border: @sand-dune solid 2px;
-  background: @color-white;
+  background-color: @color-white;
   border-radius: 0.5rem;
+}
+
+.box-style-print() {
+  margin: 0 0 20pt;
+  padding: 4pt;
+  border: @sand-dune solid 2px;
+  background-color: @color-white;
+  border-radius: 0.5rem;
+}
+
+.box-shadow(@color1, @color2, @color3) {
+  box-shadow: 5px 8px 0px @color1, 10px 16px 0px @color2, 15px 24px 0px @color3;
+}
+
+.box-shadow-print(@color1, @color2, @color3) {
+  box-shadow: 2px 5px 0px @color1, 7px 13px 0px @color2, 12px 21px 0px @color3;
 }
 
 .padding-left() {
   padding-left: @padding;
+}
+
+.padding-bottom-large() {
+  padding-bottom: @padding;
+}
+
+.padding-bottom-small() {
+  padding-bottom: @padding-small;
 }
 
 .margin-bottom() {
@@ -36,6 +60,14 @@
   margin-bottom: @margin-bottom-big;
 }
 
+.margin-bottom-none() {
+  margin-bottom: 0;
+}
+
 .margin-top() {
   margin-top: @margin-top;
+}
+
+.line-height() {
+  line-height: @line-height;
 }
