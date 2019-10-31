@@ -149,7 +149,7 @@ main {
 }
 h1,
 h2 {
-  font-family: 'Righteous', sans-serif;
+  font-family: "Righteous", sans-serif;
   text-transform: uppercase;
   padding-bottom: 2rem;
 }
@@ -159,7 +159,7 @@ h5,
 p,
 ul,
 button {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 h3,
 h4,
@@ -240,7 +240,7 @@ main .flex-three-quarters {
   text-decoration: none;
   color: #000000;
   font-size: 1.75rem;
-  font-family: 'Righteous', sans-serif;
+  font-family: "Righteous", sans-serif;
   text-transform: uppercase;
   padding: 30px 0;
 }
@@ -381,7 +381,7 @@ main .flex-three-quarters {
   color: #000000;
   font-size: 3rem;
   font-weight: 400;
-  font-family: 'Font Awesome 5 Brands';
+  font-family: "Font Awesome 5 Brands";
   padding: 1rem;
 }
 .contact .icon > .label {
@@ -390,6 +390,8 @@ main .flex-three-quarters {
 .contact-print {
   display: none;
 }
+
+/* PRINTING STYLES */
 @media print {
   .main-content {
     width: 100%;
@@ -417,9 +419,11 @@ main .flex-three-quarters {
   h1 {
     font-size: 30pt;
     margin: 0 30pt 0 0;
+    text-shadow: 4px 6px 0px #f6c9f4;
   }
   h2 {
     font-size: 16pt;
+    padding-bottom: 4pt;
   }
   h3,
   h4,
@@ -451,21 +455,29 @@ main .flex-three-quarters {
   }
   .skills,
   .education,
-  .experience,
   .projects {
-    margin-bottom: 25pt;
+    margin-bottom: 26pt;
+  }
+  .experience {
+    margin-bottom: 0;
   }
   .skills h2 {
     margin-top: 15pt;
   }
   .main-content .experience-box,
   .main-content .education-box {
-    margin: 0 0 20pt;
+    margin: 0 0 16pt;
     padding: 4pt;
-    border: #7c6965 solid 2px;
+    border: #7c6965 solid 1px;
     background-color: #fbfaef;
     border-radius: 0.5rem;
   }
+
+  .education-box:last-child,
+  .experience-box:last-child {
+    margin: 0;
+  }
+
   .main-content .experience-box h4,
   .main-content .education-box h4,
   .main-content .experience-box h5,
@@ -478,24 +490,24 @@ main .flex-three-quarters {
     line-height: 12pt;
   }
   .main-content .education .education-box {
-    box-shadow: 2px 5px 0px #70ccbf, 7px 13px 0px #06aed5, 12px 21px 0px #f3cc40;
+    box-shadow: 8px 10px 0px #70ccbf;
   }
   .main-content .experience .experience-box {
-    box-shadow: 2px 5px 0px #fcb8b9, 7px 13px 0px #f6c9f4, 12px 21px 0px #974ca7;
+    box-shadow: 8px 10px 0px #fcb8b9;
   }
   .main-content .experience .experience-box .project-h4 {
     font-size: 10pt;
   }
   .main-content .skills .skills-box {
-    margin: 0 0 20pt;
-    padding: 4pt;
-    border: #7c6965 solid 2px;
+    margin: 0 0 16pt;
+    padding: 1pt 4pt;
+    border: #7c6965 solid 1px;
     background-color: #fbfaef;
     border-radius: 0.5rem;
-    box-shadow: 2px 5px 0px #f3cc40, 7px 13px 0px #e48545, 12px 21px 0px #e6673e;
+    box-shadow: 7px 9px 0px #f3cc40;
   }
   .main-content .skills .skills-box p {
-    font-size: 9pt;
+    font-size: 10pt;
   }
   main .flex-container {
     display: flex;
