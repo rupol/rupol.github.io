@@ -2203,17 +2203,25 @@ input, select, textarea {
 		}
 
 		.image-1:after {
-			background-image: url(../../images/guidr.gif);
+			background-image: url(../../images/water-my-plants.gif);
 		}
 
 		.image-2:after {
-			background-image: url(../../images/anna-jc.gif);
+			background-image: url(../../images/monkerator.gif);
 		}
 
 		.image-3:after {
+			background-image: url(../../images/guidr.gif);
+		}
+
+		.image-4:after {
+			background-image: url(../../images/anna-jc.gif);
+		}
+
+		.image-5:after {
 			background-image: url(../../images/clay-street-coop.gif);
 		}
-		.image-4:after {
+		.image-6:after {
 			background-image: url(../../images/solstice-camp.gif);
 		}
 
