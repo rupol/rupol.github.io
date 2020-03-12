@@ -149,7 +149,7 @@ main {
 }
 h1,
 h2 {
-  font-family: "Righteous", sans-serif;
+  font-family: 'Righteous', sans-serif;
   text-transform: uppercase;
   padding-bottom: 2rem;
 }
@@ -159,7 +159,7 @@ h5,
 p,
 ul,
 button {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 h3,
 h4,
@@ -168,7 +168,14 @@ p {
   padding-bottom: 0.5rem;
 }
 h1 {
-  font-size: 6.5rem;
+  font-size: 5rem;
+  text-align: center;
+}
+@media (min-width: 650px) {
+  h1 {
+    font-size: 6.5rem;
+    text-align: left;
+  }
 }
 h2 {
   font-size: 3.5rem;
@@ -240,7 +247,7 @@ main .flex-three-quarters {
   text-decoration: none;
   color: #000000;
   font-size: 1.75rem;
-  font-family: "Righteous", sans-serif;
+  font-family: 'Righteous', sans-serif;
   text-transform: uppercase;
   padding: 30px 0;
 }
@@ -265,11 +272,11 @@ main .flex-three-quarters {
   margin-bottom: 8rem;
 }
 .intro {
-  margin-top: 80px;
   background-image: url(../images/background.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 7rem 2rem 10rem;
 }
 .intro .flex-container {
   align-items: baseline;
@@ -277,10 +284,19 @@ main .flex-three-quarters {
 .intro .intro-text {
   margin: 50px 20px;
 }
+.intro .intro-text h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+@media (min-width: 650px) {
+  .intro .intro-text h2 {
+    font-size: 3.5rem;
+    text-align: left;
+  }
+}
 .intro .intro-about {
   margin: 0 3% 5rem;
   padding: 2rem;
-  border: #7c6965 solid 2px;
   background-color: #fbfaef;
   border-radius: 0.5rem;
   opacity: 0.8;
@@ -307,11 +323,10 @@ main .flex-three-quarters {
 .main-content .skills .skills-box {
   margin: 0 3% 5rem;
   padding: 2rem;
-  border: #7c6965 solid 2px;
-  background-color: #fbfaef;
+  background-color: #fff1c0;
   border-radius: 0.5rem;
   padding: 1rem;
-  box-shadow: 5px 8px 0px #f3cc40, 10px 16px 0px #e48545, 15px 24px 0px #e6673e;
+  box-shadow: 7px 9px 0px #f3cc40;
   text-align: center;
 }
 .main-content .skills .skills-box p {
@@ -329,17 +344,22 @@ main .flex-three-quarters {
 .main-content .education-box {
   margin: 0 3% 5rem;
   padding: 2rem;
-  border: #7c6965 solid 2px;
-  background-color: #fbfaef;
+  background-color: #ffe6e7;
+  border-radius: 0.5rem;
+}
+.main-content .education-box {
+  margin: 0 3% 5rem;
+  padding: 2rem;
+  background-color: #ecfffc;
   border-radius: 0.5rem;
 }
 .main-content .education .education-box {
   text-align: left;
-  box-shadow: 5px 8px 0px #70ccbf, 10px 16px 0px #06aed5, 15px 24px 0px #f3cc40;
+  box-shadow: 8px 10px 0px #70ccbf;
 }
 .main-content .experience .experience-box {
   text-align: left;
-  box-shadow: 5px 8px 0px #fcb8b9, 10px 16px 0px #f6c9f4, 15px 24px 0px #974ca7;
+  box-shadow: 8px 10px 0px #fcb8b9;
 }
 .main-content .experience .experience-box .project-h4 {
   font-size: 1.75rem;
@@ -390,8 +410,6 @@ main .flex-three-quarters {
 .contact-print {
   display: none;
 }
-
-/* PRINTING STYLES */
 @media print {
   .main-content {
     width: 100%;
@@ -438,6 +456,7 @@ main .flex-three-quarters {
   }
   .intro {
     margin-top: 0;
+    padding: 0;
   }
   .intro .intro-text {
     margin: 0;
@@ -469,15 +488,13 @@ main .flex-three-quarters {
     margin: 0 0 16pt;
     padding: 4pt;
     border: #7c6965 solid 1px;
-    background-color: #fbfaef;
+    background-color: #fff;
     border-radius: 0.5rem;
   }
-
   .education-box:last-child,
   .experience-box:last-child {
     margin: 0;
   }
-
   .main-content .experience-box h4,
   .main-content .education-box h4,
   .main-content .experience-box h5,
@@ -508,7 +525,7 @@ main .flex-three-quarters {
     margin: 0 0 16pt;
     padding: 1pt 4pt;
     border: #7c6965 solid 1px;
-    background-color: #fbfaef;
+    background-color: #fff;
     border-radius: 0.5rem;
     box-shadow: 7px 9px 0px #f3cc40;
   }

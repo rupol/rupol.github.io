@@ -6,11 +6,11 @@
 }
 
 .intro {
-  margin-top: 80px;
   background-image: url(../images/background.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 7rem 2rem 10rem;
 
   .flex-container {
     align-items: baseline;
@@ -18,10 +18,20 @@
 
   .intro-text {
     margin: 50px 20px;
+
+    h2 {
+      font-size: 2.5rem;
+      text-align: center;
+
+      @media @desktop {
+        font-size: 3.5rem;
+        text-align: left;
+      }
+    }
   }
 
   .intro-about {
-    .box-style();
+    .box-style(@color-white);
     opacity: 0.8;
 
     @media @desktop {
@@ -45,9 +55,9 @@
     }
 
     .skills-box {
-      .box-style();
+      .box-style(#fff1c0);
       padding: 1rem;
-      .box-shadow(@saffron, @burnt-sienna, @burnt-sienna-red);
+      box-shadow: 7px 9px 0px @saffron;
       text-align: center;
 
       p {
@@ -66,20 +76,24 @@
 
   .experience-box,
   .education-box {
-    .box-style();
+    .box-style(#ffe6e7);
+  }
+
+  .education-box {
+    .box-style(#ecfffc);
   }
 
   .education {
     .education-box {
       text-align: left;
-      .box-shadow(@downy, @bright-cerulean, @saffron);
+      box-shadow: 8px 10px 0px @downy;
     }
   }
 
   .experience {
     .experience-box {
       text-align: left;
-      .box-shadow(@melon, @cherub, @affair);
+      box-shadow: 8px 10px 0px @melon;
 
       .project-h4 {
         font-size: 1.75rem;
@@ -130,7 +144,7 @@
     color: @color-black;
     font-size: 3rem;
     font-weight: 400;
-    font-family: 'Font Awesome 5 Brands';
+    font-family: "Font Awesome 5 Brands";
     padding: 1rem;
   }
 
