@@ -95,10 +95,31 @@
       text-align: left;
       box-shadow: 8px 10px 0px @melon;
 
+      .experience-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
       .project-h4 {
         font-size: 1.75rem;
         .padding-bottom-small();
         font-style: italic;
+      }
+
+      .tech-stack {
+        display: flex;
+        justify-content: space-evenly;
+        text-transform: capitalize;
+        padding: 2px 5px;
+        list-style: none;
+        margin: 0;
+        li {
+          font-size: 1.3rem;
+          padding: 5px 10px;
+          margin: 0 5px;
+          border-radius: 20px;
+        }
       }
     }
 
