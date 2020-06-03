@@ -2298,6 +2298,10 @@ label {
   background-size: 100% auto;
 }
 
+.image-0:after {
+  background-image: url(../../images/carpal.gif);
+}
+
 .image-1:after {
   background-image: url(../../images/key-conservation.gif);
 }
