@@ -222,10 +222,10 @@ main .flex-container {
   }
 }
 main .flex-quarter {
-  flex: 2;
+  flex: 1.2;
 }
 main .flex-three-quarters {
-  flex: 3;
+  flex: 2;
 }
 .color1 {
   background-color: #fcb8b9;
@@ -518,7 +518,7 @@ main .flex-three-quarters {
   }
   .skills,
   .education,
-  .projects {
+  .employment {
     margin-bottom: 26pt;
   }
   .experience {
