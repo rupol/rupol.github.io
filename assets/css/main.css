@@ -2334,6 +2334,10 @@ label {
   background-image: url(../../images/solstice-camp.gif);
 }
 
+.image-9:after {
+  background-image: url(../../images/game-of-life.gif);
+}
+
 .image img {
   display: block;
 }
